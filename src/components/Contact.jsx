@@ -39,7 +39,7 @@ const Contact = () => {
     'nRpDFkvYsg6-pBhHf'
   ).then(() => {
     setloading(false)
-    alert('Thankyou i will get back to you as soon as possible')
+    alert('Thank you, I got your message, will get back to you as soon as possible')
     setForm({
       name: '',
       email: '',
