@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -11,25 +11,19 @@ import { useEffect } from "react";
 import Footer from "./components/Footer";
 
 function App() {
-
-  // const navigate = useNavigate()
-
   useEffect(() => {
     window.scrollTo(0, 0);
-    // navigate('/')
-    if(window.location.hash){
-      window.location.replace('/')
+    if (window.location.hash) {
+      window.location.replace('/');
     }
-  },[])
+  }, []);
 
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-[#001319]">
         <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
           <Navbar />
-          <Routes>
-            <Route path="/" element={<Hero />} />
-          </Routes>
+          <Hero />
         </div>
         <About />
         <Experience />
