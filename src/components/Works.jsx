@@ -1,16 +1,16 @@
 import React from 'react';
-import { Tilt } from 'react-tilt';
+import { Tilt } from 'react-tilt'; // Ensure react-tilt is installed
 import { motion } from 'framer-motion';
-import { styles } from '../style';
-import { github } from '../assets';
-import { SectionWrapper } from './hoc';
-import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { styles } from '../style'; // Ensure styles are correctly defined
+import { github } from '../assets'; // Ensure github asset is available
+import { SectionWrapper } from './hoc'; // Ensure SectionWrapper is defined
+import { projects } from '../constants'; // Ensure projects array is available
+import { fadeIn, textVariant } from '../utils/motion'; // Ensure motion utilities are defined
 
 const ProjectCard = ({ index, name, description, tags, image, source_code_link }) => {
   return (
     <motion.div 
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)}
+      variants={fadeIn("up", "spring", index * 0.5, 0.75)} // Ensure fadeIn is defined
       className="w-full sm:w-[30%] md:w-[28%]" // Adjust width to fit 3 cards in a row
     >
       <Tilt
@@ -60,10 +60,16 @@ const ProjectCard = ({ index, name, description, tags, image, source_code_link }
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* Uncomment and configure motion div if needed */}
+      {/* <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>My Work</p>
         <p className={styles.sectionHeadText}>Projects</p>
-      </motion.div>
+      </motion.div> */}
+      
+      <div>
+        <p className={styles.sectionSubText}>My Work</p>
+        <p className={styles.sectionHeadText}>Projects</p>
+      </div>
 
       <div className="w-full flex">
         <motion.div
