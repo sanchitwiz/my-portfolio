@@ -1,11 +1,10 @@
 // src/constants/index.js
 import {
-  mobile,
-  backend,
-  creator,
-  web,
+  analogele,
+  machinelearing,
+  vlsidegign,
+  application,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
@@ -16,13 +15,13 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  stepdtu,
+  sihpic,
+  vihaanpic,
+  engifestdtu_logo,
+  netflix,
+  solarpanel,
+  currencyConvertor,
   threejs,
 } from "../assets";
 export const navLinks = [
@@ -47,19 +46,19 @@ export const navLinks = [
 export const services = [
   {
     title: "Web Developer",
-    icon: web,
+    icon: application
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
+    title: "Machine Learning",
+    icon: machinelearing,
   },
   {
-    title: "Backend Developer",
-    icon: backend,
+    title: "Analog and Digital Electronics",
+    icon: analogele,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "VLSI Design",
+    icon: vlsidegign,
   },
 ];
 
@@ -75,10 +74,6 @@ export const technologies = [
   {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
@@ -120,98 +115,86 @@ export const technologies = [
 
 export const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Smart India Hackathon",
+    company_name: "Judiciary Management Web Application",
+    icon: sihpic,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "August 2023 - December 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a web application to streamline the judiciary system, offering users easy access to court hearing details.",
+      "Designed and implemented a user-friendly interface that displays comprehensive information about upcoming court hearings, including date, time, location, and case specifics.",
+      "Integrated advanced search functionality to allow users to efficiently locate specific cases and hearing schedules.",
+      "Implemented automated notifications and reminders to keep users informed about their upcoming court dates."
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Vihaan 007",
+    company_name: "Parking System",
+    icon: vihaanpic,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Feb 2024 - March 2024",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed a comprehensive web application for renting parking spaces, aimed at simplifying the process of finding and booking parking spots.",
+      "Designed an intuitive user interface that allows users to search for available parking spaces based on location, time, and duration.",
+      "Implemented real-time availability updates and booking features to ensure users have access to the most current information.",
+      "Integrated secure payment processing using QR code to handle transactions smoothly and efficiently.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "Cultural Council",
+    company_name: "Engiest Team",
+    icon: engifestdtu_logo,
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Dec 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+        "Served as Co-Head of the Logistics Department for the Cultural Council at Delhi Technological University (DTU), overseeing the coordination and management of logistical operations for major college events and festivals.",
+        "Led the planning and execution of logistics strategies to ensure smooth and efficient operations during campus festivals and cultural events.",
+        "Managed corporate relationships and liaised with sponsors, vendors, and partners to secure resources and support for the events."
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
+    title: "Step DTU",
+    company_name: "Sub-Coordinator of Team",
+    icon: stepdtu,
     iconBg: "#E6DEDD",
     date: "Jan 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Served as the Sub-Coordinator for STEP DTU Society, overseeing the orientation program for new freshmen at Delhi Technological University (DTU).",
+      "Played a key role in planning and organizing the orientation program, ensuring a smooth and welcoming experience for incoming students.",
+      "Coordinated with fellow team members to design and implement engaging activities, workshops, and sessions to introduce freshmen to campus life and academic expectations."
     ],
-  },
-];
-
-export const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
   },
 ];
 
 export const projects = [
   {
-    name: "Car Rent",
+    name: "Sun Following Solar Panel",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "I created a sun-following solar panel system with an Arduino that adjusts the panel's angle for optimal sunlight. Using light sensors and servo motors, I enhanced its efficiency and learned more about electronics and renewable energy.",
+    tags: [
+      {
+        name: "aurdino",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "C/C++",
+        color: "green-text-gradient",
+      },
+    ],
+    image: solarpanel,
+    source_code_link: "https://github.com/",
+  },
+  {
+    name: "Netflix Clone",
+    description:
+      "I built a Web Based Netflix clone with React and a backend API along with tailwind CSS, enabling browsing, searching, and streaming of movies Trailers and TV shows for a realistic user experience.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "firebase",
         color: "green-text-gradient",
       },
       {
@@ -219,49 +202,28 @@ export const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: netflix,
+    source_code_link: "https://github.com/sanchitwiz/netflix-clone",
   },
   {
-    name: "Job IT",
+    name: "Currency Convertor",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "I created a currency converter app using React and Tailwind CSS, featuring real-time exchange rate updates and a user-friendly interface for seamless currency conversion.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "tailwind",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "currency-api",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: currencyConvertor,
+    source_code_link: "https://github.com/sanchitwiz/currency-convertor",
   },
 ];

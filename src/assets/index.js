@@ -1,8 +1,8 @@
 import logo from "./new-logo.png";
-import backend from "./backend.png";
-import creator from "./creator.png";
-import mobile from "./mobile.png";
-import web from "./web.png";
+import machinelearing from "./machinelearing.png";
+import vlsidegign from "./vlsidegign.png";
+import analogele from "./analogele.png";
+import application from "./application.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
@@ -18,24 +18,23 @@ import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import stepdtu from "./company/stepdtu.jpeg";
+import engifestdtu_logo from "./company/engifestdtu_logo.png";
+import sihpic from "./company/sihpic.png";
+import vihaanpic from "./company/vihaanpic.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import netflix from "./netflix.png";
+import solarpanel from "./solarpanel.jpeg";
+import currencyConvertor from "./currencyConvertor.png";
 
 export {
   logo,
-  backend,
-  creator,
-  mobile,
-  web,
+  machinelearing,
+  vlsidegign,
+  analogele,
+  application,
   github,
   menu,
   close,
@@ -50,13 +49,12 @@ export {
   reactjs,
   redux,
   tailwind,
-  typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  stepdtu,
+  engifestdtu_logo,
+  sihpic,
+  vihaanpic,
+  netflix,
+  solarpanel,
+  currencyConvertor,
 };

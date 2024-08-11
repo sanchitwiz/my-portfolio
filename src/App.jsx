@@ -8,6 +8,7 @@ import Works from "./components/Works";
 import Contact from "./components/Contact";
 import StarsCanvas from "./components/Stars";
 import { useEffect } from "react";
+import Footer from "./components/Footer";
 
 function App() {
 
@@ -38,6 +39,7 @@ function App() {
           <Contact />
           <StarsCanvas />
         </div>
+        <Footer />
       </div>
     </BrowserRouter>
   );

@@ -1,21 +1,20 @@
 import React, { Suspense, useEffect, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei';
-import CanvasLoader from '../Loader'; 
+import CanvasLoader from '../Loader';
 
-const Computers = ({isMobile}) => {
+const Computers = ({ isMobile, rotation }) => {
   const computer = useGLTF('./desktop_pc/scene.gltf');
 
   return (
-    <mesh>
+    <mesh rotation={rotation}>
       <hemisphereLight intensity={1} groundColor="black" />
       <pointLight intensity={3} />
-      <spotLight 
-      position={[-20, 50, 10]} 
-      />
-      <primitive object={computer.scene} 
+      <spotLight position={[-20, 50, 10]} />
+      <primitive
+        object={computer.scene}
         scale={isMobile ? 0.7 : 0.75}
-        position={isMobile ? [0, -3, -2,2] : [0, -3.25 , -1.5]}
+        position={isMobile ? [0, -3, -2, 2] : [0, -3.25, -1.5]}
         rotation={[-0.01, -0.2, -0.1]}
       />
     </mesh>
@@ -23,30 +22,35 @@ const Computers = ({isMobile}) => {
 };
 
 const ComputersCanvas = () => {
-  const [isMobile , setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+  const [rotation, setRotation] = useState([0, 0, 0]);
 
-  useEffect(()=>{ //only changing the isMobile variable
-
-    //add a listner for chnages to teh screen size
+  useEffect(() => {
+    // Event listener for screen size changes
     const mediaQuery = window.matchMedia('(max-width: 500px)');
+    setIsMobile(mediaQuery.matches);
 
-    //set the initial value of the 'isMobile' state variable
-    // setIsMobile(mediaQuery.matches)
-
-    //define a callback function to handle changes to the media query
-    const handleMediaQuery = (event) => {
+    const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
-    }
+    };
 
-    //event listner for the medaiQuery when ever it changes 
-    mediaQuery.addEventListener('change' , handleMediaQuery);
+    mediaQuery.addEventListener('change', handleMediaQueryChange);
 
-    //removing of eventListner
-    return () =>{
-      mediaQuery.removeEventListener('change' , handleMediaQuery);
-    }
+    // Event listener for scroll
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      // Adjust these values to control the rotation range
+      const rotationY = (scrollY / window.innerHeight) * Math.PI * 2;
+      setRotation([0, rotationY, 0]);
+    };
 
-  },[])
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      mediaQuery.removeEventListener('change', handleMediaQueryChange);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
     <Canvas
@@ -61,7 +65,7 @@ const ComputersCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile}/>
+        <Computers isMobile={isMobile} rotation={rotation} />
       </Suspense>
       <Preload all />
     </Canvas>

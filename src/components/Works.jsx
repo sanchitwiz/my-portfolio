@@ -70,7 +70,7 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque labore quas temporibus maxime eveniet ea esse aperiam eum dolor. Blanditiis, iste? Totam, ut excepturi vel autem accusamus voluptas nulla corporis.
+          I've developed projects in both web development and electronics, blending my love for coding with hands-on circuit work. In web development, I've built applications using React.js and the MERN stack, focusing on responsive, user-friendly designs. On the electronics side, I've worked on analog, digital, and embedded systems projects, gaining experience in integrating software with hardware to solve real-world challenges.
         </motion.div>
       </div>
 
