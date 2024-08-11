@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import About from "./components/About";
@@ -7,8 +7,20 @@ import Tech from "./components/Tech";
 import Works from "./components/Works";
 import Contact from "./components/Contact";
 import StarsCanvas from "./components/Stars";
+import { useEffect } from "react";
 
 function App() {
+
+  // const navigate = useNavigate()
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // navigate('/')
+    if(window.location.hash){
+      window.location.replace('/')
+    }
+  },[])
+
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-[#001319]">
