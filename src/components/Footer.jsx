@@ -6,7 +6,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Footer = () => {
   return (
     <footer className="bg-[#000407] py-4 relative">
-      <div className="text-center">
+      <div className="text-center mb-4 md:mb-0">
         <p className="text-white text-[12px]">
           Made by Sanchit with ❤️
         </p>
@@ -14,7 +14,7 @@ const Footer = () => {
           © 2024 All Rights Reserved.
         </p>
       </div>
-      <div className="absolute right-4 top-1/2 transform -translate-y-1/2 flex items-center space-x-4">
+      <div className="flex justify-center md:justify-end md:absolute md:right-4 md:top-1/2 md:transform md:-translate-y-1/2 space-x-4">
         <a
           href="https://github.com/sanchitwiz"
           target="_blank"

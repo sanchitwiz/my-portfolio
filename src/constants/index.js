@@ -182,7 +182,7 @@ export const projects = [
       },
     ],
     image: solarpanel,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://www.linkedin.com/posts/sanchitvohra13_renewableenergy-solarpower-electronics-activity-7189535662063157248-0FUS?utm_source=share&utm_medium=member_desktop",
   },
   {
     name: "Netflix Clone",
@@ -203,7 +203,7 @@ export const projects = [
       },
     ],
     image: netflix,
-    source_code_link: "https://github.com/sanchitwiz/netflix-clone",
+    source_code_link: "https://netflix-clone-theta-inky.vercel.app/",
   },
   {
     name: "Currency Convertor",
@@ -224,6 +224,6 @@ export const projects = [
       },
     ],
     image: currencyConvertor,
-    source_code_link: "https://github.com/sanchitwiz/currency-convertor",
+    source_code_link: "https://sanchitwiz.github.io/currency-convertor/",
   },
 ];
