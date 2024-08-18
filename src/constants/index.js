@@ -5,8 +5,6 @@ import {
   vlsidegign,
   application,
   javascript,
-  html,
-  css,
   reactjs,
   redux,
   tailwind,
@@ -14,7 +12,6 @@ import {
   mongodb,
   git,
   figma,
-  docker,
   stepdtu,
   sihpic,
   vihaanpic,
@@ -64,14 +61,6 @@ export const services = [
 
 export const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
   },
@@ -106,11 +95,7 @@ export const technologies = [
   {
     name: "figma",
     icon: figma,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  }
 ];
 
 export const experiences = [
