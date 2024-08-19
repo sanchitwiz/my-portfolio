@@ -37,7 +37,7 @@ const About = () => {
       <motion.p variants={fadeIn("", "", 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       > 
-        Hello! I’m Sanchit Vohra, an undergraduate student in Electronics and Communication Engineering at Delhi Technological University. With a deep passion for coding and a keen interest in cutting-edge technologies, I specialize in Machine Learning, Deep Learning, and the MERN stack. My enthusiasm extends to solving complex problems through Data Structures and Algorithms. Additionally, I am passionate about working on electronics projects, whether they involve analog, digital, or embedded circuits. This diverse skill set allows me to bridge the gap between software and hardware, driving innovative solutions in both fields.
+Hi, I'm Sanchit Vohra, an Electronics and Communication Engineering student at Delhi Technological University. I'm passionate about coding, with expertise in Machine Learning, Deep Learning, and the MERN stack. I enjoy solving problems with Data Structures and Algorithms and love working on electronics projects, from analog and digital circuits to embedded systems. My skills bridge the gap between software and hardware, enabling innovative solutions.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
